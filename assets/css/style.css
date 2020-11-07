@@ -1,0 +1,28 @@
+/* Your custom styles */
+html,
+body,
+header,
+.view.jarallax {
+	height: 100%;
+	min-height: 100%;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+	.navbar:not(.top-nav-collapse) {
+		background: #222 !important;
+	}
+
+	.navbar {
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+			0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+	}
+}
+
+.navbar:not(.top-nav-collapse) {
+	background-color: transparent !important;
+}
+
+.navbar:not(.top-nav-collapse) .navbar-brand,
+.navbar:not(.top-nav-collapse) .nav-link {
+	color: #45526e !important;
+}
