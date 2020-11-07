@@ -15,4 +15,35 @@ $(function () {
 			.children('.time-difference')
 			.text('(' + calcYearDif(Date.parse(theYear)) + ' years)');
 	});
+
+	// initialize scrollspy
+	$('body').scrollspy({
+		target: '.dotted-scrollspy',
+	});
+
+	$('.navbar-collapse a').click(function () {
+		$('.navbar-collapse').collapse('hide');
+	});
+
+	/* WOW.js init */
+	new WOW().init();
+
+	// MDB Lightbox Init
+	$(function () {
+		$('#mdb-lightbox-ui').load(
+			'./assets/mdb-addons/mdb-lightbox-ui.html'
+		);
+	});
+
+	// Back to top
+	var $btn = $('#btnTop');
+	var $home = $('#home');
+	var startpoint = $home.scrollTop() + $home.height();
+	$(window).on('scroll', function () {
+		if ($(window).scrollTop() > startpoint) {
+			$btn.show();
+		} else {
+			$btn.hide();
+		}
+	});
 });

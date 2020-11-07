@@ -225,7 +225,8 @@
 								</h5>
 
 								<p class="dark-grey-text">
-									I'm a<strong> developer</strong> not a coder! <br />
+									I'm a<strong> developer</strong> not a coder!
+									<br />
 									My main task is to <strong>solve</strong>
 									<del>problems</del> and <strong>create</strong>
 									<u>value</u>.
@@ -692,7 +693,10 @@
 			<!-- Fourth container -->
 			<div class="container">
 				<!-- Section About -->
-				<section class="section feature-box my-5 pb-5">
+				<section
+					id="process-of-creation"
+					class="section feature-box my-5 pb-5"
+				>
 					<!-- Section title -->
 					<h2
 						class="text-center text-uppercase my-5 pt-5 wow fadeIn"
@@ -1240,6 +1244,55 @@
 		</footer>
 		<!-- Footer -->
 
+		<div
+			id="btnTop"
+			class="fixed-action-btn smooth-scroll"
+			style="bottom: 45px; right: 24px; display: none"
+		>
+			<a
+				class="btn-floating btn-secondary btn-action waves-effect waves-light"
+				href="#home"
+			>
+				<i class="fa fa-chevron-up" aria-hidden="true"></i>
+			</a>
+		</div>
+
+		<!-- Scrollspy -->
+		<div class="dotted-scrollspy clearfix d-none d-sm-block">
+			<ul class="nav smooth-scroll flex-column">
+				<li class="nav-item">
+					<a class="nav-link" href="#home"><span></span></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#about"><span></span></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#skills"><span></span></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#features"><span></span></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#process-of-creation"
+						><span></span
+					></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#works"><span></span></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#testimonials"><span></span></a>
+				</li>
+			</ul>
+		</div>
+		<!-- Scrollspy -->
+
 		<!-- SCRIPTS -->
 		<!-- JQuery -->
 		<script
@@ -1264,26 +1317,5 @@
 
 		<!-- Custom scripts -->
 		<script type="text/javascript" src="./assets/js/main.js"></script>
-
-		<script>
-			// initialize scrollspy
-			$('body').scrollspy({
-				target: '.dotted-scrollspy',
-			});
-
-			$('.navbar-collapse a').click(function () {
-				$('.navbar-collapse').collapse('hide');
-			});
-
-			/* WOW.js init */
-			new WOW().init();
-
-			// MDB Lightbox Init
-			$(function () {
-				$('#mdb-lightbox-ui').load(
-					'./assets/mdb-addons/mdb-lightbox-ui.html',
-				);
-			});
-		</script>
 	</body>
 </html>
