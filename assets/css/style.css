@@ -1,10 +1,28 @@
 /* Your custom styles */
+@font-face {
+	font-family: 'islw';
+	src: url('../font/IRANSans-light-web/IRANSans-Light-web.eot');
+	src: url('../font/IRANSans-light-web/IRANSans-Light-web.woff')
+			format('woff'),
+		url('../font/IRANSans-light-web/IRANSans-Light-web.woff2')
+			format('woff2'),
+		url('../font/IRANSans-light-web/IRANSans-Light-web.ttf')
+			format('truetype');
+}
+
 html,
 body,
 header,
 .view.jarallax {
 	height: 100%;
 	min-height: 100%;
+}
+
+.view.jarallax {
+	background-image: url(../img/mountains-1412683.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 
 @media (min-width: 800px) and (max-width: 850px) {

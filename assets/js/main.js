@@ -11,9 +11,14 @@ $(function () {
 
 	$('.time-difference-parent').each(function () {
 		var theYear = $(this).data('date');
-		$(this)
-			.children('.time-difference')
-			.text('(' + calcYearDif(Date.parse(theYear)) + ' years)');
+		var timeDif = $(this).children('.time-difference');
+		if ($(this).hasClass('text-right')) {
+			timeDif.text('(' + calcYearDif(Date.parse(theYear)) + ' سال)');
+		} else {
+			timeDif.text(
+				'(' + calcYearDif(Date.parse(theYear)) + ' years)'
+			);
+		}
 	});
 
 	// initialize scrollspy
