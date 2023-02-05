@@ -49,7 +49,7 @@
 
 <script async>
   async function fetchMovies () {
-    const url = "http://62.106.95.20/feeder/";
+    const url = "https://62.106.95.20/feeder/";
     const response = await fetch(url);
     // waits until the request completes...
     document.getElementById('feeds').innerHTML = await response.text();
