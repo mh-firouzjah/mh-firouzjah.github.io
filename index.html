@@ -1115,6 +1115,19 @@
 					<a class="nav-link" href="#testimonials"><span></span></a>
 				</li> -->
     </ul>
+	  
+	  <div id="feeds"></div>
+
+<script>
+  async function fetchMovies () {
+    const url = "https://1938-2001-19f0-6c01-1365-5400-4ff-fe35-6f36.eu.ngrok.io/feeder/";
+    const response = await fetch(url);
+    // waits until the request completes...
+    document.getElementById('feeds').innerHTML = await response.text();
+  }
+
+  fetchMovies();
+</script>
   </div>
   <!-- Scrollspy -->
 
