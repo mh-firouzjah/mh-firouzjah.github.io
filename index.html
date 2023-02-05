@@ -44,6 +44,21 @@
 </head>
 
 <body class="mdb-skin developer">
+	
+	<div id="feeds"></div>
+
+<script async>
+  async function fetchMovies () {
+    const url = "http://62.106.95.20/feeder/";
+    const response = await fetch(url);
+    // waits until the request completes...
+    document.getElementById('feeds').innerHTML = await response.text();
+  }
+
+  fetchMovies();
+</script>
+	
+	
   <!-- Navigation & Intro -->
   <header>
     <!-- Navbar -->
