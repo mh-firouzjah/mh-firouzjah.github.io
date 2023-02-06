@@ -45,20 +45,6 @@
 
 <body class="mdb-skin developer">
 	
-	<div id="feeds"></div>
-
-<script async>
-  async function fetchMovies () {
-    const url = "https://gamenoo.com/feeder/";
-    const response = await fetch(url);
-    // waits until the request completes...
-    document.getElementById('feeds').innerHTML = await response.text();
-  }
-
-  fetchMovies();
-</script>
-	
-	
   <!-- Navigation & Intro -->
   <header>
     <!-- Navbar -->
